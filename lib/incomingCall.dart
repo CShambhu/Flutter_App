@@ -10,31 +10,12 @@ class incomingCall extends StatelessWidget {
         padding: const EdgeInsets.only(top: 50),
         child: Column(
           children: [
-            Padding(
-            padding: const EdgeInsets.only(top: 50),
-            // child: Card(
-            //   shape: RoundedRectangleBorder(
-            //     borderRadius: BorderRadius.circular(5)
-            //   ),
-            //   child: Column(
-            //     children: [
-            //       CircleAvatar(
-            //         backgroundColor: Colors.blue,
-            //         child: Icon(Icons.person),
-            //       ),
-            //       Padding(
-            //         padding: const EdgeInsets.only(left: 10),
-            //         child: Text("This is a card"),
-            //       ),
-            //     ],
-            //   ),
-            // ),
-          ),
+            Padding(padding: const EdgeInsets.only(top: 50)),
             Card(
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(10),
               ),
-                    
+
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -44,28 +25,34 @@ class incomingCall extends StatelessWidget {
                         padding: const EdgeInsets.only(right: 20),
                         child: Icon(Icons.call),
                       ),
-                    Column(
-                      children: [
-                        SizedBox(height: 20),
-                        Text("9876543210",style: TextStyle(color: Colors.green)),
-                        Text("Incoming",style: TextStyle(color: Colors.orange)),
-                      ],
-                    ),
+                      Column(
+                        children: [
+                          SizedBox(height: 20),
+                          Text(
+                            "9876543210",
+                            style: TextStyle(color: Colors.green),
+                          ),
+                          Text(
+                            "Incoming",
+                            style: TextStyle(color: Colors.orange),
+                          ),
+                        ],
+                      ),
                     ],
-                  
                   ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    Text("Dial",style: TextStyle(color: Colors.blue)),
-                    SizedBox(width: 10),
-                    Text("Call History",style: TextStyle(color: Colors.blue))
-                  ],
-                ),
-                    
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Text("Dial", style: TextStyle(color: Colors.blue)),
+                      SizedBox(width: 10),
+                      Text(
+                        "Call History",
+                        style: TextStyle(color: Colors.blue),
+                      ),
+                    ],
+                  ),
                 ],
               ),
-              
             ),
           ],
         ),

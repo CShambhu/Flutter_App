@@ -40,7 +40,15 @@ class StackCard extends StatelessWidget {
                     ],
                   ),
                   Spacer(),
-                  Row(children: [Icon(Icons.person)]),
+                  Row(
+                    children: [
+                      CircleAvatar(
+                        radius: 30,
+                        backgroundColor: Color.fromARGB(255, 205, 167, 240),
+                        child: Icon(Icons.person, size: 50),
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ),
@@ -83,10 +91,18 @@ class StackCard extends StatelessWidget {
                       child: Column(
                         children: [
                           SizedBox(height: 35),
-                          Icon(
-                            Icons.file_open_outlined,
-                            size: 35,
-                            color: const Color.fromARGB(255, 92, 15, 216),
+                          CircleAvatar(
+                            backgroundColor: const Color.fromARGB(
+                              255,
+                              195,
+                              176,
+                              226,
+                            ),
+                            child: Icon(
+                              Icons.file_open_outlined,
+                              size: 25,
+                              color: const Color.fromARGB(255, 92, 15, 216),
+                            ),
                           ),
                           SizedBox(height: 30),
                           Text(
@@ -116,10 +132,18 @@ class StackCard extends StatelessWidget {
                       child: Column(
                         children: [
                           SizedBox(height: 35),
-                          Icon(
-                            Icons.calendar_today,
-                            size: 35,
-                            color: const Color.fromARGB(255, 35, 123, 231),
+                          CircleAvatar(
+                            backgroundColor: const Color.fromARGB(
+                              255,
+                              161,
+                              198,
+                              243,
+                            ),
+                            child: Icon(
+                              Icons.calendar_today,
+                              size: 25,
+                              color: const Color.fromARGB(255, 35, 123, 231),
+                            ),
                           ),
                           SizedBox(height: 27),
                           Text(
@@ -149,10 +173,13 @@ class StackCard extends StatelessWidget {
                       child: Column(
                         children: [
                           SizedBox(height: 35),
-                          Icon(
-                            Icons.check,
-                            size: 35,
-                            color: Color.fromARGB(255, 62, 187, 135),
+                          CircleAvatar(
+                            backgroundColor: Color.fromARGB(255, 174, 233, 208),
+                            child: Icon(
+                              Icons.check,
+                              size: 25,
+                              color: Color.fromARGB(255, 62, 187, 135),
+                            ),
                           ),
                           SizedBox(height: 30),
                           Text(
@@ -218,9 +245,11 @@ class StackCard extends StatelessWidget {
                                     left: 10,
                                     top: 10,
                                   ),
-                                  child: Icon(
-                                    Icons.file_open,
-                                    color: Colors.deepPurple,
+                                  child: CircleAvatar(
+                                    child: Icon(
+                                      Icons.file_open,
+                                      color: Colors.deepPurple,
+                                    ),
                                   ),
                                 ),
                                 Column(
@@ -284,9 +313,17 @@ class StackCard extends StatelessWidget {
                                     left: 10,
                                     top: 10,
                                   ),
-                                  child: Icon(
-                                    Icons.developer_mode,
-                                    color: Color.fromARGB(255, 73, 113, 245),
+                                  child: CircleAvatar(
+                                    backgroundColor: Color.fromARGB(
+                                      255,
+                                      200,
+                                      201,
+                                      245,
+                                    ),
+                                    child: Icon(
+                                      Icons.developer_mode,
+                                      color: Color.fromARGB(255, 73, 113, 245),
+                                    ),
                                   ),
                                 ),
                                 Column(
@@ -349,9 +386,17 @@ class StackCard extends StatelessWidget {
                                     left: 10,
                                     top: 10,
                                   ),
-                                  child: Icon(
-                                    Icons.check,
-                                    color: Color.fromARGB(255, 62, 187, 135),
+                                  child: CircleAvatar(
+                                    backgroundColor: Color.fromARGB(
+                                      255,
+                                      204,
+                                      247,
+                                      213,
+                                    ),
+                                    child: Icon(
+                                      Icons.check,
+                                      color: Color.fromARGB(255, 62, 187, 135),
+                                    ),
                                   ),
                                 ),
                                 Padding(
@@ -414,9 +459,17 @@ class StackCard extends StatelessWidget {
                                     left: 10,
                                     top: 10,
                                   ),
-                                  child: Icon(
-                                    Icons.timer,
-                                    color: Colors.orange,
+                                  child: CircleAvatar(
+                                    backgroundColor: Color.fromARGB(
+                                      255,
+                                      243,
+                                      240,
+                                      199,
+                                    ),
+                                    child: Icon(
+                                      Icons.timer,
+                                      color: Colors.orange,
+                                    ),
                                   ),
                                 ),
                                 Column(
