@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_class/stackCard.dart';
+import 'package:flutter_class/Login.dart';
+import 'package:flutter_class/Register.dart';
 
 void main() {
   runApp(const MyMainApp());
@@ -17,27 +18,7 @@ class MyMainApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      
-      home: const StackCard(),
+      home: Register(),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
